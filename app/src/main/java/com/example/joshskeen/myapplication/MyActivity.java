@@ -10,6 +10,7 @@ public class MyActivity extends Activity
 {
 
     Button mClickMeButton;
+    Button mClickMeButton2;
     TextView mHelloWorldTextView;
 
     @Override
@@ -25,6 +26,15 @@ public class MyActivity extends Activity
             public void onClick(View v)
             {
                 mHelloWorldTextView.setText("HEY WORLD");
+            }
+        });
+        mClickMeButton2 = (Button) findViewById(R.id.clickMeBtn2);
+        mClickMeButton2.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                mHelloWorldTextView.setText("HEY WORLD 2");
             }
         });
     }
